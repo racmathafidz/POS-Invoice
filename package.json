@@ -1,0 +1,17 @@
+{
+    "name": "pos-invoice-monorepo",
+    "private": true,
+    "packageManager": "pnpm@9.0.0",
+    "workspaces": [
+        "apps/*"
+    ],
+    "scripts": {
+        "dev": "concurrently \"pnpm --filter web dev\" \"pnpm --filter server dev\"",
+        "lint": "echo 'add eslint later'",
+        "format": "prettier -w ."
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2",
+        "prettier": "^3.3.3"
+    }
+}
